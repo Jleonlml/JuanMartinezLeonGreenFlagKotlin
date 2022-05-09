@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/white"
+        android:name="com.example.juanmartinezleongreenflagkotlin.LogoFragment" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textToAnim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text1"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:fontFamily="@font/museosans_500"
+            android:paddingTop="20dp"/>
+
+        <ListView
+            android:id="@+id/lvFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            tools:layout_height="330dp"
+            tools:listitem="@layout/feature_item" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/btn_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="@string/btn_create_account_text"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/btn_background"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

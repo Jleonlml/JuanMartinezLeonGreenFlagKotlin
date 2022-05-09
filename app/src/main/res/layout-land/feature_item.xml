@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="30dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_check_24"
+            android:foregroundGravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tvFeatureItem"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/museosans_300"
+            android:textSize="18sp"
+            android:gravity="start|center"
+            android:textColor="@color/textColor"
+            android:text="some text"
+            android:layout_weight="8"/>
+    </LinearLayout>
+</LinearLayout>
